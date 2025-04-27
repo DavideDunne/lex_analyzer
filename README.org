@@ -1,0 +1,41 @@
+* Compile and run in terminal
+Convert lex to c code
+#+BEGIN_SRC
+  lex lex_analyzer.l
+#+END_SRC
+
+Compile resultant c code
+#+BEGIN_SRC
+  gcc lex.yy.c -o lex-output -ll
+#+END_SRC
+
+Allow code to be run
+#+BEGIN_SRC
+  chmod +x lex-output
+#+END_SRC
+
+Execute code
+#+BEGIN_SRC
+  ./lex-output
+#+END_SRC
+
+* Use case example
+input
+#+BEGIN_SRC
+  a = 1.3 + 5
+#+END_SRC
+
+output
+#+BEGIN_SRC
+  id  assign  fnum  plus  int
+#+END_SRC
+
+input
+#+BEGIN_SRC
+  f 1.5
+#+END_SRC
+
+output
+#+BEGIN_SRC
+  floatdcl  fnum
+#+END_SRC
