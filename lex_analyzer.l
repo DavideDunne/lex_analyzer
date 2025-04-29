@@ -26,6 +26,10 @@
 
 [0-9]+  { printf("int "); }
 
+\/  { printf("divide "); }
+
+\*  { printf("multiply "); }
+
 \n  { printf("\n"); }
 
 %%
