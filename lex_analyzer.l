@@ -14,6 +14,8 @@
 
 ^i  { printf("intdcl "); }
 
+^p  { printf("print "); }
+
 \=  { printf("assign "); }
 
 \+  { printf("plus "); }
